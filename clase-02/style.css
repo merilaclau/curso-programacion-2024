@@ -1,0 +1,44 @@
+/* ESTO LO COPIAMOS DEL SITIO DE GOOGLE FONTS
+Recordar eliminar la etiqueta <style> al pegarlo */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+/* Selector de elemento body */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Selector de elemento h1 */
+h1 {
+    color: rebeccapurple;
+    font-weight: 100;
+}
+
+/* Selector de elemento span */
+span {
+    font-weight: 700;
+    font-size: 36px;
+}
+
+/* Selector de clase primary. 
+Notar que se escribe un punto adelante */
+.primary {
+    color: palevioletred;
+    background-color: black;
+}
+
+/* Selector de id #h2-a. 
+Notar que los ids son únicos, no pueden repetirse e 
+identifican a un único elemento de nuestro HTML */
+#h2-a {
+    color: blue;
+}
+
+/* Otro selector de id */
+#h3-a {
+    color: black;
+}
+
+/* Otro selector de id */
+#h3-a {
+    color: green;
+}
