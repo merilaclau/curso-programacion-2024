@@ -1,67 +1,85 @@
 <html lang="es">
-    <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Clase 2</title>
-      <link rel="stylesheet" href="style.css">
-    </head>  
-    <body>
-      <h1 >Soy el título más importante! (h1)</h1>
-      
-      <!-- En esta ETIQUETA h1 vemos cómo se aplica una clase llamada "primary" 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clase 2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Soy el título más importante! (h1)</h1>
+
+    <!-- En esta ETIQUETA h1 vemos cómo se aplica una clase llamada "primary" 
       Notar que los nombres de clases pueden ser cualquier cosa que queramos, 
       cuánto más ilustrativos de lo que hacen, mejor.
       -->
-      <h1 class="primary">Soy otro título de la jerarquía más importante! (h1)</h1>
+    <h1 class="primary">
+      Soy otro título de la jerarquía más importante! (h1)
+    </h1>
 
-      <!-- En esta ETIQUETA h2 vemos cómo se aplica un id llamado "h2-a" 
+    <!-- En esta ETIQUETA h2 vemos cómo se aplica un id llamado "h2-a" 
       Notar que, al igual que los nombres de clases, los nombres de pueden ser 
       cualquier cosa que queramos, pero no olvidemos que no pueden repetirse. Son como el DNI de cada elemento!
       -->
-      <h2 id="h2-a">Soy el título de jerarquía 2 (h2)</h2>
+    <h2 id="h2-a">Soy el título de jerarquía 2 (h2)</h2>
 
-      <!-- En esta ETIQUETA h3 vemos cómo acá también se aplica una clase llamada "primary" 
+    <!-- Acá vemos un ejemplo del modelo de cajas que tenemos en HTML. Recuerden que dentro del
+    modelo de cajas tenemos tres conceptos: El borde, el margen y el padding. Si abren el html van a poder ver de 
+    forma visual qué representa cada uno -->
+
+    <h1 id="box-model">
+      Este es un ejemplo de CSS Box Model (Modelo de cajas). La línea azul es el
+      borde, el espacio rojo entre las letras y el borde es el padding y el
+      espacio entre el borde y los otros elementos es el margin :D
+    </h1>
+
+    <!-- En esta ETIQUETA h3 vemos cómo acá también se aplica una clase llamada "primary" 
       Además, esta etiqueta tiene un id. Los estilos de clases y ids pueden combinarse, 
       pero si alguna propiedad se repite, siempre va a ganar lo que tenga mayor especificidad, es decir, el id en este caso.
       -->
-      <h3 class="primary" id="h3-a">Soy el título de jerarquía 3 (h3)</h3>
-      
-      <h4>Soy el título de jerarquía 4 (h4)</h4>
-      
-      <!-- En esta ETIQUETA h5 vemos cómo se aplica un id llamado "h5-a" que no se repite en ningún otro lado -->
-      <h5 id="h5-a">Soy el título de jerarquía 5 (h5)</h5>
-      
-      <h6>Soy el título de jerarquía 6 (h6)</h6>
-  
-      <!-- En esta ETIQUETA a vemos cómo acá también se aplica una clase llamada "primary" -->
-      <a class="primary" href="https://www.google.com/?hl=es" target="_blank">SOY UN LINK</a>
-  
-      <!-- En esta ETIQUETA p vemos cómo acá también se aplica una clase llamada "primary" -->
-      <p class="primary">Hola, soy Meri. Vivo en CABA con 4 gatites. Soy programadora. Besis!</p>
-      
-      <!-- Notar que dentro de este p hay una ETIQUETA span a la cual le agregamos estilos diferentes con CSS -->
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas
-        dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id,
-        porttitor vitae est. <span>Donec laoreet rutrum libero sed pharetra.</span> Duis a arcu
-        convallis, gravida purus eget, mollis diam. Praesent non urna non mauris
-        laoreet ultricies eget at enim. Phasellus lacus odio, ullamcorper ac ipsum
-        in, tincidunt tincidunt massa. Suspendisse ut malesuada sapien, vitae
-        mollis diam. Suspendisse tristique et ex non faucibus. Pellentesque a urna
-        risus. Ut non enim finibus, tempus dui eget, tincidunt sem. Phasellus sed
-        mauris elit.
-      </p>
-  
-      <ul>
-        <!-- En algunas de estas ETIQUETAS li vemos cómo se aplica una clase llamada "primary" -->
-        <li class="primary">Soy el primer item/elemento de la lista!</li>
-        <li>Soy el segundo item/elemento de la lista!</li>
-        <li class="primary">Soy el tercer item/elemento de la lista!</li>
-        <li>Soy el cuarto item/elemento de la lista!</li>
-        <li>Soy el quinto item/elemento de la lista!</li>
-      </ul>
-  
+
+    <h3 class="primary" id="h3-a">Soy el título de jerarquía 3 (h3)</h3>
+
+    <h4>Soy el título de jerarquía 4 (h4)</h4>
+
+    <!-- En esta ETIQUETA h5 vemos cómo se aplica un id llamado "h5-a" que no se repite en ningún otro lado -->
+    <h5 id="h5-a">Soy el título de jerarquía 5 (h5)</h5>
+
+    <h6>Soy el título de jerarquía 6 (h6)</h6>
+
+    <!-- En esta ETIQUETA a vemos cómo acá también se aplica una clase llamada "primary" -->
+    <a class="primary" href="https://www.google.com/?hl=es" target="_blank"
+      >SOY UN LINK</a
+    >
+
+    <!-- En esta ETIQUETA p vemos cómo acá también se aplica una clase llamada "primary" -->
+    <p class="primary">
+      Hola, soy Meri. Vivo en CABA con 4 gatites. Soy programadora. Besis!
+    </p>
+
+    <!-- Notar que dentro de este p hay una ETIQUETA span a la cual le agregamos estilos diferentes con CSS -->
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas
+      dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id,
+      porttitor vitae est.
+      <span>Donec laoreet rutrum libero sed pharetra.</span> Duis a arcu
+      convallis, gravida purus eget, mollis diam. Praesent non urna non mauris
+      laoreet ultricies eget at enim. Phasellus lacus odio, ullamcorper ac ipsum
+      in, tincidunt tincidunt massa. Suspendisse ut malesuada sapien, vitae
+      mollis diam. Suspendisse tristique et ex non faucibus. Pellentesque a urna
+      risus. Ut non enim finibus, tempus dui eget, tincidunt sem. Phasellus sed
+      mauris elit.
+    </p>
+
+    <ul>
+      <!-- En algunas de estas ETIQUETAS li vemos cómo se aplica una clase llamada "primary" -->
+      <li class="primary">Soy el primer item/elemento de la lista!</li>
+      <li>Soy el segundo item/elemento de la lista!</li>
+      <li class="primary">Soy el tercer item/elemento de la lista!</li>
+      <li>Soy el cuarto item/elemento de la lista!</li>
+      <li>Soy el quinto item/elemento de la lista!</li>
+    </ul>
+
     <!-- ETIQUETA iframe copiada y pegada de la opción de compartir en Youtube -->
     <iframe
       width="560"
@@ -72,11 +90,11 @@
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen
     ></iframe>
-    
-     <!-- ETIQUETA video con atributo controls para que se muestre la botonera (play, pausa, etc.) -->
-     <video controls>
-        <!-- ETIQUETA source con atributo src para vincular el video y atributo type para indicar el formato del video -->
-        <source src="./assets/sample-video.mp4" type="video/mp4" />
-      </video>
-</body>
+
+    <!-- ETIQUETA video con atributo controls para que se muestre la botonera (play, pausa, etc.) -->
+    <video controls>
+      <!-- ETIQUETA source con atributo src para vincular el video y atributo type para indicar el formato del video -->
+      <source src="./assets/sample-video.mp4" type="video/mp4" />
+    </video>
+  </body>
 </html>
