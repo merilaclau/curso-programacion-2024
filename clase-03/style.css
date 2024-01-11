@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Roboto+Mono:ital,wght@0,100;0,500;1,700&display=swap');
+h1 {
+    font-size: 40;
+    font-family: 'Lemon', serif;
+}
+
+h2 {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.text-color {
+    font-weight: 700;
+    color: black;
+    background-color: purple
+}
+
+#subtitle {
+    color: white;
+    font-weight: 100;
+}
