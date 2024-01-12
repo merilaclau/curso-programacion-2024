@@ -1,0 +1,23 @@
+body {
+    background-color: #D6DBDF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cuerpo {
+    background-color: white;
+    height: 400px;
+    width: 70%;
+    display: flex;
+}
+
+#contenedor-titulos {
+    background-color: red;
+}
+
+#contenedor-botones {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+}

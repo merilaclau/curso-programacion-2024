@@ -18,3 +18,16 @@ h2 {
     color: white;
     font-weight: 100;
 }
+
+.titulo-color {
+    color: blue
+}
+
+.titulo-rojo {
+    color: green;
+    background-color: red;
+}
+
+#cuarto-titulo {
+    color: white
+}
