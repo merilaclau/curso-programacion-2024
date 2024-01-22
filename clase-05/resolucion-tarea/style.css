@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    margin-top: 32px;
+    padding: 32px;
 }
 
 nav {
@@ -218,4 +218,20 @@ button {
 .title {
     color: white;
     font-weight: 100;
+}
+
+#position {
+    position: relative; 
+    width: 600px;
+    height: 600px;
+    background-color: red;
+}
+
+#contenedor-hijo {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    position: absolute;
+    bottom: 45%;
+    right: 12px;
 }
