@@ -1,0 +1,79 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clase 06</title>
+  </head>
+  <body>
+    <!--Method puede tomar dos valores: GET y POST-->
+    <form action="https://google.com" method="GET">
+      <label for="web-language-query-input">
+        Ingresá tus consulta
+        <input
+          id="web-language-query-input"
+          type="text"
+          name="q"
+          placeholder="Cómo se programa en..."
+          maxlength="10"
+        />
+      </label>
+
+      <label for="age-input">Edad:</label>
+      <input
+        id="age-input"
+        max="10"
+        type="number"
+        name="edad"
+        placeholder="25"
+      />
+      <label for="email-input">Email</label>
+      <input id="email-input" type="email" name="email" />
+      <label for="date-input">Fecha</label>
+      <input id="date-input" type="date" name="date" />
+      <label for="file-upload-input">Subir archivo</label>
+      <input id="file-upload-input" type="file" name="file" />
+
+      <div>
+        <label for="two-rooms-input">2 ambientes</label>
+        <input id="two-rooms-input" type="checkbox" name="2amb" value="2amb" />
+      </div>
+      <div>
+        <label for="three-rooms-input">3 ambientes</label>
+        <input
+          id="three-rooms-input"
+          type="checkbox"
+          name="3amb"
+          value="3amb"
+        />
+      </div>
+
+      <div>
+        <label for="one-input">1</label>
+        <input id="one-input" type="radio" name="numeroquequiero" value="1" />
+      </div>
+      <div>
+        <label for="two-input">2</label>
+        <input id="two-input" type="radio" name="numeroquequiero" value="2" />
+      </div>
+      <div>
+        <label for="three-input">3</label>
+        <input id="three-input" type="radio" name="numeroquequiero" value="3" />
+      </div>
+
+      <label for="extra-info-input">Información adicional</label>
+      <textarea id="extra-info-input" name="textarea"></textarea>
+
+      <select name="select">
+        <option value="-1">- Seleccionar -</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Chile">Chile</option>
+        <option value="Venezuela">Venezuela</option>
+        <option value="Colombia">Colombia</option>
+        <option value="Peru">Peru</option>
+      </select>
+
+      <button type="submit">CONTINUAR</button>
+    </form>
+  </body>
+</html>
