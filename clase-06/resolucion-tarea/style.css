@@ -286,6 +286,7 @@ button {
   #about-column,
   .list-column {
     width: 100%;
+    margin-top: 16px;
   }
 }
 
@@ -332,6 +333,7 @@ button {
   }
   #content-container, #copyright {
     flex-direction: row;
+    justify-content: space-between;
   }
   #about-column {
     width: 50%;
