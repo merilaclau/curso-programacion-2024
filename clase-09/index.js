@@ -1,5 +1,10 @@
 const nombre = 'Meri';
 const apellido = 'Laclau';
+const edadMeri = 37;
+const esVegana = true;
+
+let estudiosFinalizadosNull = null;
+let estudiosFinalizadosUndefined;
 
 // CONCATENAR TEXTO
 const nombreCompletoConcatenado = 'Mi nombre es ' + nombre + ' ' + apellido;
@@ -38,6 +43,7 @@ numero /= 4;
 // igual
 console.log(1 === 1); // true
 console.log(1 === 2); // false
+console.log(1 === "1"); // false
 
 // desigual
 console.log(1 !== 2); // true
