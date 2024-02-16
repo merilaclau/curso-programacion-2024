@@ -1,5 +1,5 @@
-const nombre = 'Meri';
-const apellido = 'Laclau';
+const nombre = "Meri";
+const apellido = "Laclau";
 const tieneMascotas = true;
 const esVegana = true;
 const fumaTabaco = false;
@@ -14,7 +14,6 @@ console.log(esVegana && tieneMascotas);
 console.log(esVegana && fumaTabaco);
 // va a devolver false porque sólo una de las variables es true
 
-
 // || (Disyunción / OR )
 // Devuelve true si al menos una condición o variable es true
 console.log(esVegana || tieneMascotas);
@@ -22,12 +21,10 @@ console.log(esVegana || tieneMascotas);
 console.log(esVegana || fumaTabaco);
 // va a devolver true porque al menos una de las variables es true
 
-
 // ! (Negación / NOT )
 // Invierte o niega el valor de una variable booleana
 console.log(!fumaTabaco);
 // va a devolver true porque fumaTabaco es originalmente false
-
 
 // Método length
 nombre.length();
@@ -35,12 +32,11 @@ nombre.length();
 
 // Método prompt
 // abre una caja de diálogo en el navegador
-prompt('Cómo te llamás');
-
+prompt("Cómo te llamás");
 
 // Método alert
 // muestra un mensaje en el navegador
-alert('Nombre inválido')
+alert("Nombre inválido");
 
 // ESTRUCTURAS DE CONTROL
 /* Nos permiten controlar cómo va a ser el flujo de nuestro programa. 
@@ -49,25 +45,33 @@ Si se cumple una condición, sucederá una cosa, si se cumple otra, sucederá al
 
 // IF
 if (esVegana) {
-    alert('Te preparo un hummus');
+  alert("Te preparo un hummus");
 }
 
 if (!esVegana) {
-    alert('Te preparo un asado');
+  alert("Te preparo un asado");
 }
 
 // IF, ELSE
 if (esVegana) {
-    alert('Te preparo un hummus');
+  alert("Te preparo un hummus");
 } else {
-    alert('Te preparo un asado');
+  alert("Te preparo un asado");
 }
 
 // IF, ELSE IF, ELSE
 if (!esVegana) {
-    alert('Te preparo un asado');
+  alert("Te preparo un asado");
 } else if (!esVegana && fumaTabaco) {
-    alert('Te preparo un pucho y un asado');
+  alert("Te preparo un pucho y un asado");
 } else {
-    alert('Te preparo un hummus');
+  alert("Te preparo un hummus");
+}
+
+// Tarea que hicimos en clases <3
+const nombre2 = prompt("Decime tu nombre");
+if (nombre2.length >= 1) {
+  alert(`Bienvenide ${nombre}`);
+} else {
+  alert("Nombre inválido");
 }
