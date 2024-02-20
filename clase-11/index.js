@@ -5,7 +5,7 @@ Hacerlo primero con if-else if y después con switch. */
 const numero = prompt("Ingresá un número del 1 al 12");
 
 // versión con if - else if
-if (numero === "1") {
+/* if (numero === "1") {
   alert("El mes es enero");
 } else if (numero === "2") {
   alert("El mes es febrero");
@@ -31,7 +31,7 @@ if (numero === "1") {
   alert("El mes es diciembre");
 } else {
   alert("No corresponde a un mes");
-}
+} */
 
 // versión con switch
 switch (numero) {
@@ -134,63 +134,64 @@ function obtenerMensajeDeCumple() {
   }
 }
 
-function saludo(nombre = "desconocide", apellido = "sin apellido") {
-  alert(`Hola, ${nombre} ${apellido}`);
+//1.
+/***********************************************
+ *
+ * 1. Hacer una funcion llamada "saludo"
+ * 2. Cada vez llamo la funcion le paso un nombre como parámetro
+ * 3. Toma ese nombre y me dice
+ *    "Hola <nombre>" en un alert.
+ *
+ ***********************************************/
+
+function saludo(nombre, apellido) {
+  alert(`Hola ${nombre} ${apellido}`);
 }
 
+saludo("Celeste", "Cabrera");
 saludo("Meri", "Laclau");
-// retorna "Hola, Meri Laclau"
+
+function saludoMaela() {
+  const nombre = "Maela";
+
+  alert(`Hola ${nombre}`);
+}
+
+//2.
+/***********************************************
+ *
+ * Hacer una funcion para elevar un
+ * número al cuadrado. El numero va por param
+ *
+ ***********************************************/
+
+function numeroAlCuadrado(numero) {
+  return numero * numero;
+}
+
+numeroAlCuadrado(2);
+// retorna un 4
+
+numeroAlCuadrado(5);
+// retorna un 25
 
 saludo();
-// retorna "Hola, desconocide sin apellido"
+saludo();
+saludo();
 
-saludo("Meri");
-// retorna "Hola, Meri sin apellido"
+function saludo(nombre, apellido) {
+  console.log(`Hola, ${nombre} ${apellido}`);
+}
 
+saludo("Celeste", "Cabrera");
 
-//Arrow function
-const suma = (numero1, numero2) => {
+const saludo = () => {
+  console.log("Hola");
+};
+
+function suma(numero1, numero2) {
   return numero1 + numero2;
-};
-
-
-//ARRAYS
-
-const meses = ["Enero", "Febrero", "Marzo"];
-
-// Agrega el mes de abril al final del array
-meses.push("Abril");
-
-//Elimina el último elemento del array
-meses.pop();
-
-//Me muestra todo el array
-console.log(meses);
-
-//Me muestra el primer elemento del array
-console.log(meses[0]);
-
-/* Crear un programa que le pida a le usuario 
-que ingrese 3 notas y devolverle el promedio
-de esas 3 notas */
-
-const notas = [];
-
-function obtenerNota(notas) {
-  const notaUsuarie = parseInt(prompt("Ingresa una nota"));
-
-  notas.push(notaUsuarie);
 }
 
-function obtenerPromedio(notas) {
-  return (notas[0] + notas[1] + notas[2]) / 3;
-}
-
-// Funciones pasadas a función flecha
-const obtenerNota = () => {
-  const notaUsuarie = parseInt(prompt("Ingresa una nota"));
-
-  notas.push(notaUsuarie);
-};
-
-const obtenerPromedio = () => (notas[0] + notas[1] + notas[2]) / 3;
+const suma = (numero1, numero2) =>
+  console.log(`Los números ingresados son ${numero1} y ${numero2}`);
