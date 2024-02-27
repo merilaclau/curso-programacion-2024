@@ -52,3 +52,17 @@ const gatite = 'Alex';
 // COMPARACION ESTRICTA (VALOR Y TIPO DE DATO)
 1 === '1'
 // false
+
+
+const nombre = 'Pirulo';
+const edad = 5;
+const especie = 'Gato';
+const comidaPreferida = 'atún'
+
+const pirulo = {
+    nombre,
+    edad,
+    especie,
+    cenaPreferida: comidaPreferida,
+    hermanites: [ 'Pochoclo', 'Derrida' ]
+};
